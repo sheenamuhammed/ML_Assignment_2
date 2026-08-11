@@ -36,7 +36,7 @@ The target variable used for classification is `GradeClass`.
 
 During exploratory data analysis, the dataset structure, missing values, duplicate records, unique values, target class distribution, and feature distributions were examined.
 
-`StudentID` was excluded because it is an identifier and does not provide meaningful predictive information. `GPA` was also excluded from the model features to avoid using a variable that is directly related to student academic performance and could make the prediction of `GradeClass` less meaningful. `GradeClass` was used as the target variable.
+`StudentID` was excluded because it is an identifier and does not provide meaningful predictive information. `GPA` was excluded from the model features because it is closely related to the target variable,  `GradeClass`.
 
 The dataset was divided into training and testing sets, and feature scaling was performed as required for the implemented models.
 
